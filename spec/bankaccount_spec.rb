@@ -12,7 +12,7 @@ RSpec.describe BankAccount do
     describe "#withdraw" do
       it "decreases the balance by the withdrawal amount if funds are available" do
         account = BankAccount.new(100)
-        account.deposit(50)
+        account.withdraw(50)
         expect(account.balance).to eq(50)
       end
   
